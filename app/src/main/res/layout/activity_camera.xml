@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <org.opencv.android.JavaCameraView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frame_surface"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/flip_camera"
+            android:src="@drawable/flip_camera"
+            android:layout_marginTop="30dp"/>
+    </LinearLayout>
+</FrameLayout>
